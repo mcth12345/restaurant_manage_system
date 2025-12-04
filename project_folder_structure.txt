@@ -1,0 +1,21 @@
+restaurant_manage_system (11/10/2025)
+    |
+    |____ project_folder_structure.txt (you're reading me)
+    |
+    |____ sources
+    |
+    |____ document
+    |         |____ main_document
+    |         |____ database_document
+    |         |____ deployment_document
+    |         |____ test_document
+    |
+    |____ process_manage
+    |         |____ qua_trinh_thuc_hien_du_an.doc
+    |
+    |____ file_store
+              |____ image_files
+              |____ system_design_files
+                        |____ ERD_files
+                        |____ SQL_files              
+
