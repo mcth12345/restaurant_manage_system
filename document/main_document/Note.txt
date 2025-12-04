@@ -1,0 +1,133 @@
+2. Phân tích, thiết kế ERD và liệt kê danh sách API cho các tính năng trong hệ thống
+2.1 Tính năng mở cửa hàng online
+- Đối tượng sử dụng: chủ nhà hàng.
+- Quy trình thực hiện:
+    + Đăng ký tài khoản chủ nhà hàng.
+    + Mở cửa hàng online.
+    + Thêm domain kinh doanh (có thể bổ xung, thay đổi sau).
+    + Chọn giao diện cho website từ kho giao diện, gồm các bước:
+        . Xem danh sách tất cả các giao diện trong hệ thống (có thể lọc, tìm kiếm giao diện theo nhiều tiêu chí).
+        . click vào để xem chi tiết một giao diện, gồm: giới thiệu, đánh giá, bình luận về giao diện và nút chọn xem trước giao diện.
+        . chọn sử dụng giao diện cho website. Có 2 trường hợp:
+            . TH1: Giao diện miễn phí: chỉ cần chọn sử dụng giao diện này cho website của bạn.
+            . TH2: Giao diện có trả phí: được miễn phí dùng thử trong vòng 15 ngày (mỗi tài khoản chỉ có duy nhất một lần dùng thử cho mỗi bộ giao diện).
+                                         Sau khi hết hạn dùng thử sẽ tiến hành thanh toán nếu không sẽ không thể truy cập được website.
+
+2.2 Tính năng setup cho cửa hàng online
+- Đối tượng sử dụng: chủ nhà hàng.
+- Quy trình thực hiện:
+    + Setup, quản lý các thành phần tĩnh cho website:
+        . Thêm logo, slogan, tên quán, địa chỉ,...
+        . Thêm danh sách các chi nhánh (nếu có).
+        . Thiết lập chatbox hỗ trợ khách hàng (nếu cần).
+    + Thiết lập, quản lý danh sách các page trong website:
+        . Xem được danh sách các page có trong website. 
+        . Với mỗi page trong website, có thể tùy chọn bật/tắt page theo nhu cầu của chủ cửa hàng.
+        . Với mỗi page trong website, chủ nhà hàng có thể thêm mới, sửa, xóa, bật/tắt, thay đổi dữ liệu cho các component (còn phụ thuộc vào sự hỗ trợ của bộ giao diện đang dùng).
+    + Thêm vào, quản lý các dữ liệu phục vụ kinh doanh:
+        . Quản lý danh sách chi nhánh.
+        . Quản lý danh sách khu vực trong nhà hàng.
+        . Quản lý danh sách bàn.
+        . Quản lý danh mục hàng.
+        . Quản lý món ăn, hàng hóa, dịch vụ (phòng karaoke, cách chế biến món,...).
+        . Quản lý bài viết gồm: bài viết về nhà hàng, sản phẩm và các bài viết dạng blog (mạng xã hội).
+    
+
+2.3 Tính năng quản trị tài khoản cho nhân viên trong cửa hàng
+- Đối tượng sử dụng: chủ cửa hàng.
+- Các thao tác thực hiện:
+    + Tạo mới tài khoản cho nhân viên.
+    + Quản lý tài khoản, phân quyền cho nhân viên (có hỗ trợ phân quyền theo thời gian thực).
+
+2.4 Tính năng quản lý dữ liệu kinh doanh của cửa hàng
+- Đối tượng sử dụng: chủ cửa hàng.
+- Các thao tác thực hiện:
+    + Nhận đơn hàng từ khách hàng, nhân viên (đặt bàn hộ) và duyệt đơn hàng.
+    + Thiết lập chức năng thanh toán đơn hàng cho website (xem lại 3 phương thức thanh toán hóa đơn).
+    + Thanh toán hóa đơn cho khách hàng.
+    + Tích điểm và phân loại cho khách hàng:
+        . Điểm của khách hàng sẽ được tích thông qua ưu đãi của các chương trình khuyến mãi.
+        . Chủ cửa hàng sẽ lập ra các loại khách hàng cùng với số diểm tương ứng. Khi khách hàng muốn thăng hạng, số điểm tích lũy tương ứng với hạng sẽ được trừ.
+    + Mở các sự kiện như mini-game, vòng quay may mắn,… cho khách hàng tham gia, mỗi sự kiện sẽ có điều kiện tham gia và số điểm tích lũy bị trừ tương ứng.
+    + Mở các chương trình khuyến mãi theo các điều kiện khác nhau. 
+    + Quản lý doanh thu, tổng lượng quà tặng, ưu đãi mà khách hàng nhận được theo từng chương trình khuyến mãi.
+    + Quản lý hóa đơn.
+    + Quản lý bình luận và đánh giá của khách hàng với nhà hàng, sản phẩm, món ăn, bài viết.
+    + Tự động đưa các bài đăng, sản phẩm, món ăn mới lên mạng xã hội,...
+    + Tạo QR code cho các bàn trong quán: xem menu, xem hóa đơn tại bàn, thanh toán online,...
+    + Nhận các thông báo từ hệ thống (khi có đơn hàng mới, thông báo bảo trì hệ thống,...).
+    + Thống kê doanh thu cửa hàng theo các mốc thời gian, theo chi nhánh, theo món, theo danh mục,...
+    + Quản lý 2 hình thức nhận hàng khi khách đặt hàng online:
+        . Khách tự đến lấy: hiển thị danh sách các chi nhánh (nếu có) để khách hàng chọn nơi đến lấy hàng.
+        . Giao hàng online: Yêu cầu khách hàng cung cấp địa chỉ và thông tin liên hệ để giao hàng.
+    + Quản lý, thiết lập các hình thức thanh toán được áp dụng:
+        . COD - thanh toán khi nhận hàng.
+        . Chuyển khoản tự xác nhận: sẽ hiển thị orderID để khách hàng và chủ cửa hàng tự xác nhận thanh toán.
+        . Khách hàng thanh toán thông qua các cổng thanh toán online.
+    + Quản lý, thay đổi nội dung cho các trang tĩnh: chính sách đổi trả hàng, giao hàng, thời gian hoạt động, tuyển dụng,...
+
+2.5 Tính năng xem danh sách món ăn, sản phẩm
+- Đối tượng sử dụng: khách hàng.
+- Các thao tác thực hiện:
+    + Xem danh sách món ăn theo các tiêu chí: theo danh mục, món phổ biến, món bán chạy, đặc sản,...
+    + Có hỗ trợ phân trang cho danh sách món.
+    + Có hỗ trợ đánh dấu 'món ăn ưa thích của tôi'.
+
+2.5 Tính năng tìm kiếm sản phẩm
+- Đối tượng sử dụng: khách hàng.
+- Các thao tác thực hiện:
+    + Tìm kiếm món ăn theo tên.
+    + Tìm kiếm món ăn theo tên trong từng danh mục món.
+    + Hỗ trợ tìm kiếm các thông tin khác: hóa đơn, bài viết, blog,...
+
+2.6 Tính năng lọc sản phẩm theo nhiều tiêu chí khác nhau
+- Đối tượng sử dụng: khách hàng.
+- Các thao tác thực hiện:
+    + Lọc ra các sản phẩm theo nhiều điều kiện lọc khác nhau.
+    + Các điều kiện lọc sản phẩm có thể kết hợp với nhau bất kỳ bởi 2 toán tử OR và AND.
+
+2.7 Tính năng xem chi tiết món ăn, sản phẩm
+- Đối tượng sử dụng: khách hàng.
+- Các thao tác thực hiện:
+    + Xem các thông tin chi tiết về món ăn: tên, ảnh, mô tả, giá, khuyến mãi,...
+    + Xem được các phương pháp chế biến phù hợp cho món ăn (kèm giá cả và gia vị liên quan).
+    + Thêm món ăn vào danh sách món ăn yêu thích.
+    + Thêm món ăn vào danh sách các món đã xem.
+    + Nếu món ăn (hàng hóa) bị hết, khách có thể chọn 'thông báo cho tôi khi có hàng'.
+    + Xem được các món ăn khác có liên quan.
+    + Xem được các combo có liên quan với món ăn.
+    + Xem được các set món có liên quan tới món ăn.
+    + Xem được đánh giá, bình luận của khách hàng cho món ăn.
+
+2.8 Tính năng mua sản phẩm online
+- Đối tượng sử dụng: khách hàng.
+- Các thao tác thực hiện:
+    + Thêm sản phẩm vào giỏ hàng: thêm, xóa, sửa, thay đổi số lượng sản phẩm trong giỏ hàng.
+    + Đăng nhập vào hệ thống để hưởng ưu đãi từ các chương trình khuyến mãi.
+    + Lựa chọn chương trình khuyến mãi, ưu đãi đang có trên hệ thống vào hóa đơn.
+    + Xem được thông tin về giỏ hàng: tổng tiền hóa đơn, chương trình khuyến mãi đang áp dụng, tổng tiền thanh toán.
+    + Chọn hình thức nhận hàng, có 2 trường hợp nhận hàng khi mua hàng online:
+        . TH1: Tự đến lấy hàng: chọn chi nhánh, hoặc cửa hàng sẽ đến lấy.
+        . TH2: Giao hàng online: Cung cấp địa chỉ để giao hàng.
+    + Thời gian mua hàng online còn tùy thuộc vào thời gian hoạt động của nhà hàng. Nếu nằm ngoài khoảng thời gian hoạt động sẽ hiển thị thông báo cho khách hàng.
+    + Nếu đặt hàng thành công, khách hàng sẽ nhận được email xác nhận đơn hàng.
+
+2.9 Tính năng đặt bàn tại nhà hàng
+- Đối tượng sử dụng: khách hàng.
+- Các thao tác thực hiện:
+    + Thao tác chọn món (có 2 trường hợp):
+        . TH1: Chọn món trước, đặt bàn sau: Khi khách hàng đã chọn món vào giỏ hàng và chọn đặt bàn tại quán.
+        . TH2: Chọn đặt bàn trước: Khi khách hàng vào website và chọn ngay đặt bàn tại quán --> Hiện thị thực đơn cho khách hàng chọn món (nếu khách muốn).
+    + Chọn số người đến (người lớn và trẻ em) và thời gian sẽ đến.    
+    + Đồng ý đặt bàn --> lập đơn hàng và chờ sự xác nhận của quản lý.
+
+2.10 Tính năng tích điểm và xếp hạng tại các nhà hàng
+- Đối tượng sử dụng: khách hàng
+    + Điểm sẽ được tích thông qua các chương trình khuyến mãi của nhà hàng.
+    + Khách hàng có thể được xếp vào các loại khác nhau (do nhà hàng đặt ra), để thăng hạng khách hàng sẽ bị trừ một số điểm tích lũy tương ứng với thứ hạng đó.
+    + Ngoài việc sử dụng điểm tích lũy để thăng hạng, khách hàng còn có thể dùng điểm cho các hoạt động khác như tham gia các mini-game, bốc thăm trúng thưởng,...
+
+2.11 Tính năng nhận ưu đãi từ các chương trình khuyến mãi của nhà hàng
+- Đối tượng sử dụng: khách hàng.
+- Các thao tác thực hiện:
+     

@@ -1,0 +1,25 @@
+I. Phân tích và thiết kế hệ thống
+1. Đặc tả hệ thống thông qua các đối tượng sử dụng
+    + Global Admin
+    + Chủ nhà hàng
+    + Nhà phát triển giao diện người dùng
+    + Khách hàng (người sử dụng dịch vụ của nhà hàng)
+2. Sau khi xác định nhu cầu sử dụng của các đối tượng. Ta tổng hợp được thành nhóm các chức năng có trong hệ thống (quản lý danh mục, quản lý món,...). 
+   Với mỗi nhóm chức năng sẽ có nhiều chức năng con tương ứng cho từng đối tượng. Với mỗi chức năng con, ta sẽ thực hiện 2 công việc:
+    + vẽ mô hình ERD lưu trữ dữ liệu cần thiết cho chức năng.
+    + liệt kê các API phù hợp để thực hiện chức năng (danh sách API).
+3. Dựa vào các chức năng ở trên, ta sẽ liệt kê các page phù hợp để người dùng thực hiện các chức năng đó.
+
+II. Xây dựng database
+
+III. Frontend
+
+IV. Backend
+
+V. Testing
+
+VI. Deployment
+
+VII. Tìm kiếm khách hàng
+
+
