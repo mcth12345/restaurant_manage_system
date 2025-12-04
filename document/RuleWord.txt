@@ -1,0 +1,6 @@
+- Số (tối đa 3 số)
+- Chữ
+- "-"
+- "+"
+- Đấu chấm tròn trắng
+- Đấu chấm tròn đen
