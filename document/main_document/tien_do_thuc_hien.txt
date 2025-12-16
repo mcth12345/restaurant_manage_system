@@ -4,15 +4,15 @@ THIẾT KẾ ERD
 3. Quản lý các danh sách hệ thống
 4. Tìm kiếm và bộ lọc
 5. Quản lý món ăn, sản phẩm
-6.Checkout (H)
+6.Checkout 
 7. Tích điểm và xếp hang
 8. Khuyến mãi
-9. Quản lý đánh giá, bình luận (H)
+9. Quản lý đánh giá, bình luận 
 10. Chatbox
 11. Quản lý gọi món
-12. Quản lý thông tin, chính sách nhà hàng (H)
+12. Quản lý thông tin, chính sách nhà hàng 
 13. Chức năng dành cho desktop app
 14. Quản lý thanh toán
-15. Quản lý nhận thông báo từ hệ thống (H)
+15. Quản lý nhận thông báo từ hệ thống 
 16. Quản lý giao điện
-17. Quản lý thống kê (H)
+17. Quản lý thống kê 
