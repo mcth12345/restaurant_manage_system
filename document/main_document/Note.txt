@@ -1,0 +1,4 @@
+- mai (16/12/2025):
+    + xem và làm lại phần checkout.
+    + suy nghĩ xem khi nào lựa chọn CTKM là phù hợp khi mua và thanh toán đơn hàng.
+    + làm lại phần thống kê.
